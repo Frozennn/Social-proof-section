@@ -61,7 +61,7 @@ img {
 /* RATING SECTION */
 
 .rating {
-  max-width: 95%;
+  max-width: 30rem;
   margin: 0 auto;
 }
 
@@ -96,6 +96,8 @@ ul li {
   background: linear-gradient(rgb(80, 32, 80), rgba(80, 32, 80, 0.9));
   padding: 1rem;
   border-radius: 3px;
+  max-width: 30rem;
+  margin: 0 auto;
 }
 
 .card-header {
@@ -132,7 +134,7 @@ ul li {
 .hero-img-bottom {
   position: absolute;
   left: 25%;
-  bottom: 0;
+  bottom: 0%;
 }
 /* DESKTOP MEDIA */
 
@@ -161,6 +163,7 @@ ul li {
     font-size: 3.5rem;
     max-width: 60%;
     margin: 0 0 2rem 3rem;
+    line-height: 0.8;
   }
 
   .heading-paragraph {
@@ -173,6 +176,7 @@ ul li {
 
   .rating {
     margin-top: 3rem;
+    max-width: 95%;
   }
 
   ul {
