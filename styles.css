@@ -42,6 +42,10 @@ img {
   object-fit: cover;
 }
 
+.main-container {
+  margin: 1rem;
+}
+
 /* HEADING SECTION */
 
 .heading-section {
@@ -61,7 +65,7 @@ img {
 /* RATING SECTION */
 
 .rating {
-  max-width: 30rem;
+  max-width: 20rem;
   margin: 0 auto;
 }
 
@@ -85,7 +89,9 @@ ul li {
 
 .testimonials {
   color: #fff;
-  margin: 1rem;
+  /* margin: 1rem; */
+  max-width: 20rem;
+  margin: 0 auto;
 }
 
 .testimonials div:not(:last-child) {
@@ -96,8 +102,6 @@ ul li {
   background: linear-gradient(rgb(80, 32, 80), rgba(80, 32, 80, 0.9));
   padding: 1rem;
   border-radius: 3px;
-  max-width: 30rem;
-  margin: 0 auto;
 }
 
 .card-header {
@@ -133,10 +137,18 @@ ul li {
 
 .hero-img-bottom {
   position: absolute;
-  left: 25%;
-  bottom: 0%;
+  bottom: 0;
 }
 /* DESKTOP MEDIA */
+@media (min-width: 800px) {
+  .testimonials {
+    max-width: 25rem;
+  }
+
+  .rating {
+    max-width: 25rem;
+  }
+}
 
 @media (min-width: 1200px) {
   .main-container {
@@ -163,7 +175,6 @@ ul li {
     font-size: 3.5rem;
     max-width: 60%;
     margin: 0 0 2rem 3rem;
-    line-height: 0.8;
   }
 
   .heading-paragraph {
@@ -210,6 +221,7 @@ ul li {
     align-items: flex-start;
     gap: 1.5rem;
     margin-left: 3rem;
+    max-width: 100%;
   }
 
   .testimonial-paragraph {
